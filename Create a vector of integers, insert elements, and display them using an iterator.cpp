@@ -10,10 +10,9 @@ int main(){
     integers.push_back(30);
     integers.push_back(40);
     
-    
-    
-    for(int x:integers){
-        cout<<x<<endl;
+    vector<int>::iterator x;
+    for(x=integers.begin();x!=integers.end();x++){
+        cout<<*x<<endl;
     }
     
 }
